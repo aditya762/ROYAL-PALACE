@@ -1,56 +1,364 @@
 <!DOCTYPE html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Login / Sign Up Form</title>
-    <link rel="shortcut icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="C:\Users\ADITYA PRATAP SINGH\OneDrive\Desktop\Projectcse326\login\main.css">
-</head>
-<body>
-    <div class="container">
-        <form class="form" id="login">
-            <h1 class="form__title">Login</h1>
-            <div class="form__message form__message--error"></div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Username or email">
-                <div class="form__input-error-message"></div>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL RP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="C:\Users\ADITYA PRATAP SINGH\OneDrive\Desktop\Projectcse326\main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "C:\Users\ADITYA PRATAP SINGH\OneDrive\Desktop\Projectcse326\images\logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span><h4>ROYAL PALACE</h4></span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
             </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Password">
-                <div class="form__input-error-message"></div>
+
+            <div class = "head-bottom flex">
+                <h2>The Perfect Blend Of Classic Luxury And A Contemporary Setting</h2>
+                <p>Immerse yourself in a relaxed stay in this carefully restored landmark villa where indulgent treats like cocktails and hors d'oeuvres in the library, breakfast in bed and quiet relaxation are all part of the experience. Beautifully designed superior and luxury rooms cater to your every whim, while our discreet hosts can curate your perfect Ponsonby experience.</p>
+                <button type = "button" class = "head-btn"><a style="color:white ;" style="text-decoration: none;" href="C:\Users\ADITYA PRATAP SINGH\OneDrive\Desktop\Projectcse326\login\index.html">GET STARTED</a></button>
             </div>
-            <button class="form__button" type="submit"><a href="C:\Users\ADITYA PRATAP SINGH\OneDrive\Desktop\Projectcse326\Projectcse326.html">Continue</a></button>
-            <p class="form__text">
-                <a href="#" class="form__link">Forgot your password?</a>
-            </p>
-            <p class="form__text">
-                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
-            </p>
-        </form>
-        <form class="form form--hidden" id="createAccount">
-            <h1 class="form__title">Create Account</h1>
-            <div class="form__message form__message--error"></div>
-            <div class="form__input-group">
-                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
-                <div class="form__input-error-message"></div>
+        </header>
+       
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <button class = "btn sign-up"><a style="color:white;" href="C:\Users\ADITYA PRATAP SINGH\OneDrive\Desktop\Projectcse326\login\index.html">sign up</a></button>
+            <button class = "btn log-in"><a style="color:white;" href="C:\Users\ADITYA PRATAP SINGH\OneDrive\Desktop\Projectcse326\login\index.html">log in</a></button>
+        </div>
+        
+        <div id = "modal"></div>
+        
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
             </div>
-            <div class="form__input-group">
-                <input type="text" class="form__input" autofocus placeholder="Email Address">
-                <div class="form__input-error-message"></div>
+            <div class = "services-container">
+                
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>In our bid to deliver authentic, undiluted experiences, we’ve introduced a unique regional home style dining experience. Always prepared with a local touch, the home-style cooking ensures that you maintain good health throughout your stay. And at the same time it gives you the opportunity to dabble in the local delicacies.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>The company itself is a very successful company. We accuse the cares of flattery at a time when the services are harsher. The necessity of choosing him especially for those who praise him, unless he is spared pain and suffering like that and similar pleasures, for the distinction of bearing, to that same thing, every thing from the rejection of the body is rejected!</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>The company itself is a very successful company. We accuse the cares of flattery at a time when the services are harsher. The necessity of choosing him especially for those who praise him, unless he is spared pain and suffering like that and similar pleasures, for the distinction of bearing, to that same thing, every thing from the rejection of the body is rejected!</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>The company itself is a very successful company. We accuse the cares of flattery at a time when the services are harsher. The necessity of choosing him especially for those who praise him, unless he is spared pain and suffering like that and similar pleasures, for the distinction of bearing, to that same thing, every thing from the rejection of the body is rejected!</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                
             </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Password">
-                <div class="form__input-error-message"></div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" max="100" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" max="100" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" max="100" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
             </div>
-            <div class="form__input-group">
-                <input type="password" class="form__input" autofocus placeholder="Confirm password">
-                <div class="form__input-error-message"></div>
+            <div class = "rooms-container">
+                
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Superior Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                48 inch LCD televisions with all SKY channels, Movielink and Chromecast.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                In-room breakfast service.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Complimentary mini bar with drinks, snacks, Nespresso and T2 teas.
+                            </li>
+                        </ul>
+                        <p>A carefully curated scene of refined relaxation awaits in each one of our Superior suites.
+
+                            Taking the design lead from the lofty ceilings and statement windows of the original villa, our rooms are spacious, warm and bathed in natural light. Beautiful soft furnishings, high-tech entertainment and connectivity, generous ensuite and deluxe amenities make it irresistible to rest and relax.
+                            
+                            Curl up on your King bed with a book or drink from your complimentary mini bar before exploring the Ponsonby area then return to a night of unparalleled comfort.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque, fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit eius labore, atque quo?</p>
+                        <p class = "rate">
+                            <span>₹4999.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Local and sustainable luxurious bathroom amenities, robe and slippers.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                In-room breakfast service.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                48 inch LCD televisions with all SKY channels, Movielink and Chromecast.
+                            </li>
+                        </ul>
+                        <p>Discover a level of truly unmatched luxury in this bespoke and intimate setting, designed to reimagine the boutique hotel experience.
+
+                            From the sumptuous interior design to the bespoke furnishings, linens and amenities, our Luxury suites offer extra space and stunning views of Richmond Road and beyond, with a charming lounge nook and access to nearby balconies.
+                            
+                            These suites possess the perfect finishing touches to make your stay utterly memorable, including premium linens and complimentary mini bar, King size bed, large ensuite and entertainment or connectivity at your fingertips.</p>
+                        <p class = "rate">
+                            <span>₹5999.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "C:\Users\ADITYA PRATAP SINGH\OneDrive\Desktop\Projectcse326\images\img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Single Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                               24-hour room service.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24-hour reception.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Paperless check-in.
+                            </li>
+                        </ul>
+                        <p>Our Single Rooms cater to the guest who wants extra room during their stay, with a room size of 31sqm.
+
+                            The suite's spacious layout offers even more room than our standard hotel accommodation, including a separate lounge area for in-room relaxing or hosting friends.
+                            
+                            Equipped with the same premium amenities and furnishings as all other room types, the Junior Suite really sets the mood for a special celebration or getaway.</p>
+                        <p class = "rate">
+                            <span>₹2999.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                
             </div>
-            <button class="form__button" type="submit"><a href="C:\Users\ADITYA PRATAP SINGH\OneDrive\Desktop\Projectcse326\Projectcse326.html">Continue</a></button>
-            <p class="form__text">
-                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
-            </p>
-        </form>
-    </div>
-    <script src="C:\Users\ADITYA PRATAP SINGH\OneDrive\Desktop\Projectcse326\login\main.js"></script>
-</body>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>They were extremely accommodating and allowed us to check in early at like 10am. We got to hotel super early and I didn’t wanna wait. So this was a big plus. The sevice was exceptional as well. Would definitely send a friend there.</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Logan Paul , USA</span>
+                    </div>
+                    
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>The best hotel I've ever been privileged enough to stay at. Gorgeous building, and it only gets more breathtaking when you walk in. High quality rooms (there was even a tv by the shower), and high quality service. Also, they are one of few hotels that allow people under 21 to book a reservation.</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Jenny , RUSSIA</span>
+                    </div>
+                    
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>I had a wonderful experience at the Royal Palace. Every staff member I encountered, from the valet to the check- in to the cleaning staff were delightful and eager to help! Thank you! Will recommend to my colleagues!</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>Christopher , UK</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "tel 25490">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Phagwara , Punjab , INDIA
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +919672756744
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            hotelroyalpalace@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+        <script src="C:\Users\ADITYA PRATAP SINGH\OneDrive\Desktop\Projectcse326\script.js"></script>
+    </body>
+</html>
